@@ -5,17 +5,17 @@ function App() {
     <div className="App">
       <h1 className="App-header">
         React Weather App
-        <p>
+        <footer>
           This website is coded by Benedicte Toko and is
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/BeneToko/react-weather-app"
             target="_blank"
             rel="noreferrer"
           >
             Open-sourced
           </a>
-        </p>
+        </footer>
       </h1>
     </div>
   );
