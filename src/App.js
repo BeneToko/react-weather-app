@@ -1,8 +1,10 @@
 import "./App.css";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
+      <Weather />
       <h1 className="App-header">
         React Weather App
         <footer>
@@ -13,6 +15,8 @@ function App() {
             target="_blank"
             rel="noreferrer"
           >
+            {" "}
+            {""}
             Open-sourced
           </a>
         </footer>
