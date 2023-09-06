@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <Weather />
       <h1 className="App-header">
-        React Weather App
         <footer>
           This website is coded by Benedicte Toko and is
           <a
