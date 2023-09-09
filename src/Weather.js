@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Weather.css";
 import Axios from "axios";
+
+const apiKey = "tfa2776a4d92b34b1190063a36d411of";
+const apiURL = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
 export default function Weather() {
   return (
