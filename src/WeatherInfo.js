@@ -15,10 +15,7 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="clearfix">
             <div className="float-left">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt=""
-              />{" "}
+              <img src={props.data.icon} alt="" />{" "}
             </div>
             <div className="float-left">
               <span className="temperature">
