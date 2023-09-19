@@ -26,9 +26,11 @@
 }
 
 .Weather .temperature {
-  color: #212121;
+  font-weight: bold;
+  color: rgb(33, 33, 33);
   font-size: 64px;
-  line-height: 50px;
+  line-height: 64px;
+  margin-left: 5px;
   font-weight: 400;
   margin-left: 10px;
 }
@@ -44,7 +46,7 @@
 
 .Weather img {
   line-height: 40px;
-  display: inline-block;
+  display: flex;
 }
 
 .container {
