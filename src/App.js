@@ -13,7 +13,7 @@ function App() {
             className="App-link"
             href="https://github.com/BeneToko/react-weather-app"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             {" "}
             {""}
