@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherInfo(props) {
   return (
@@ -31,6 +32,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
+      <WeatherForecast />
     </div>
   );
 }
