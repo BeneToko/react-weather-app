@@ -32,7 +32,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <WeatherForecast />
+      <WeatherForecast city={props.data.city}/>
     </div>
   );
 }
