@@ -11,21 +11,25 @@ export default function WeatherForecast(props) {
     setLoaded(true);
   }
   if (loaded) {
-    console.log(forecast);
+    const icon = props.icon.icon;
     return (
       <div className="weatherForecast">
         <div className="row">
           <div className="col">
-            <div className="weatherForecast-day">Thu</div>
+            <div className="weatherForecast-day">{forecast.time}</div>
             <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-night.png"
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons${icon}.png"
               alt=""
               width="52"
               height="52"
             />
             <div className="weatherForecast-temperature">
-              <span className="weatherForecast-temperature-max">19°</span>
-              <span className="weatherForecast-temperature-min">10°</span>
+              <span className="weatherForecast-temperature-max">
+                {forecast.temperature.maximum}°C
+              </span>
+              <span className="weatherForecast-temperature-min">
+                {forecast.temperature.minimum}°
+              </span>
             </div>
           </div>
         </div>
