@@ -15,16 +15,18 @@ export default function WeatherForecast(props) {
     return (
       <div className="weatherForecast">
         <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast.daily} />
+          <div className="col-2">
+            {forecast.map((forecastDay) => (
+              <WeatherForecastDay data={forecastDay} />
+            ))}
           </div>
         </div>
       </div>
     );
   } else {
-    const city = props.city.city;
-    const apiKey = "tfa2776a4d92b34b1190063a36d411of";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    const city = props.city;
+    const apiKey = "1a747f2d7ac32a100bt13fab8776o6ca";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return null;
