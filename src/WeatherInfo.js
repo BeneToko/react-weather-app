@@ -14,7 +14,7 @@ export default function WeatherInfo(props) {
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
       <div className="row">
-        <div className="col-6">
+        <div className="col-9">
           <div className="clearfix">
             <div className="float-left">
               <img src={props.data.icon} alt="" />
@@ -24,7 +24,7 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-3">
           <ul>
             <li>Feels Like: {Math.round(props.data.feelsLike)}°C</li>
             <li>Humidity: {props.data.humidity}%</li>
@@ -32,7 +32,7 @@ export default function WeatherInfo(props) {
           </ul>
         </div>
       </div>
-      <WeatherForecast city={props.data.city}/>
+      <WeatherForecast city={props.data.city} />
     </div>
   );
 }

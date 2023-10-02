@@ -1,9 +1,10 @@
 .Weather {
   font-family: arial, sans-serif;
-  border: 1px solid #dadde1;
+  border: 1px solid #9771f3;
   padding: 16px;
   border-radius: 4px;
   color: #9771f3;
+  background-color: aliceblue;
 }
 
 .Weather h1 {
@@ -43,12 +44,14 @@
 }
 
 .Weather .unit {
-  color: #ef5f9a;
   font-size: 16px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -34px;
+  background: linear-gradient(45deg, #ef5f9a, #9771f3, #6fdae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Weather img {
