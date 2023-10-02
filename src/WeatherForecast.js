@@ -15,11 +15,9 @@ export default function WeatherForecast(props) {
     return (
       <div className="weatherForecast">
         <div className="row">
-          <div className="col-2">
-            {forecast.map((forecastDay) => (
-              <WeatherForecastDay data={forecastDay} />
-            ))}
-          </div>
+          {forecast.map((forecastDay) => (
+            <WeatherForecastDay data={forecastDay} />
+          ))}
         </div>
       </div>
     );
