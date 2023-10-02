@@ -8,8 +8,9 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;}
-  
+  background-color: #fff;
+}
+
 .App {
   max-width: 600px;
   margin: 30px auto;
@@ -18,4 +19,12 @@ body {
 .App footer {
   font-size: 11px;
   margin: 10px 0;
+  text-align: center;
+  background: linear-gradient(45deg, #ef5f9a, #9771f3, #6fdae7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.App a {
+  background: none;
 }
